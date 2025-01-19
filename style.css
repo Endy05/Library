@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+#library  {
+    background-color: cyan;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.book {
+    background-color: orange;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.book h3 {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.book p {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.panel {
+    background-color: darkcyan;
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.adding-book {
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 20px;
+    top: 50%;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.adding-book label {
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.adding-book input:not(.submit) {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+.submit {
+    max-width: 100px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: burlywood;
+    border: none;
+    border-radius: 10px;
+    transition: 200ms ease all;
+}
+
+.submit:hover {
+    background-color: rgb(201, 130, 38);
+}
+
+
+.close {
+    width: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 5px;
+    border: none;
+    transition: 200ms ease all;
+}
+
+.close:hover {
+    background-color: #868686;
+}
+
+.add-book {
+    padding: 10px 20px;
+    background-color: olivedrab;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    transition: 200ms ease all;
+}
+
+.add-book:hover {
+    background-color: green;
+}
+
+.error {
+    height: 20px;
+    margin: 0 20px;
+    margin-bottom: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.delete {
+    width: 70px;
+}
+
+.delete, .toggle-read {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: cyan;
+    transition: 200ms ease all;
+}
+
+.delete:hover, .toggle-read:hover {
+    background-color: darkcyan;
+}
+
+.toggle-read {
+    width: 80px;
+
+}
+
