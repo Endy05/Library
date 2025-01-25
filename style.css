@@ -12,7 +12,7 @@
     background-color: whitesmoke;
 }
 
-#library  {
+.library  {
     background-color: cyan;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
